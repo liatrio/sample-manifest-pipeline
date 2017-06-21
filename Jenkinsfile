@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage("Parse") {
             steps {
-                AddProductToManifest(${params.Product}, ${params.Version})
+                AddProductToManifest( params.Product, params.Version )
             }
         }
     }
