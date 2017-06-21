@@ -7,9 +7,15 @@ pipeline {
         string(name: "Version", description: "Version of the product to be added or updated")
     }
     stages {
-        stage("Parse") {
+        stage("Update Manifest") {
             steps {
                 AddProductToManifest( params.Product, params.Version )
+            }
+        }
+        stage("Deploy manifest") {
+            steps{
+                input 'Ready to deploy manifest'
+                DeployAllProducts('manifest.yml')
             }
         }
     }
