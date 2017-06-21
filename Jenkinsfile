@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage("Parse") {
             steps {
-                AddProductToManifest("some-ui32","1.2.0")
+                AddProductToManifest(${params.Product}, ${params.Version})
             }
         }
     }
