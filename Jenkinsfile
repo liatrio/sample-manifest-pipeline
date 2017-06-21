@@ -5,7 +5,7 @@ pipeline {
     stages {
         stage("Parse") {
             steps {
-                AddProductToManifest()
+                AddProductToManifest("some-ui32","1.2.0")
             }
         }
     }
