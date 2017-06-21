@@ -13,9 +13,15 @@ pipeline {
             }
         }
         stage("Deploy manifest") {
+            agent {
+                      docker {
+                          image 'liatrio/cf-cli'
+                          args '--network=demodeploymentpipeline_default'
+                      }
+              }
             steps{
                 input 'Ready to deploy manifest'
-                DeployAllProducts('manifest.yml')
+                DeployToBluemix()
             }
         }
     }

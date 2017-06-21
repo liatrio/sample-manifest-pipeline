@@ -2,6 +2,6 @@
 applications:
  - name: liatrio-spring-petclinic
    random-route: true
-   path: target/petclinic.war
+   path: liatrio-spring-petclinic.war
    memory: 512M
    instances: 1
