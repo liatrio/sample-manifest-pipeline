@@ -1,4 +1,1 @@
-{
-    "some-data-service": "blah/blah/blah/blah/some-data-service.war-2.6.9.war",
-    "some-ui": "blah/blah/some-ui.war-2.6.9.war"
-}
+{"some-data-service":"blah/blah/blah/blah/some-data-service.war-2.6.9.war","some-ui":"1.2.0"}
