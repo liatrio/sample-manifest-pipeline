@@ -1,2 +1,7 @@
-some-data-service: blah/blah/blah/blah/some-data-service.war-2.6.9.war
-some-ui: blah/blah/some-ui.war-2.6.9.war
+---
+applications:
+ - name: liatrio-spring-petclinic
+   random-route: true
+   path: target/petclinic.war
+   memory: 512M
+   instances: 1
